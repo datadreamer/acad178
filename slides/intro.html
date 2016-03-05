@@ -43,6 +43,9 @@
 				height: auto;
 			}
 
+			/* Move all this shit into the proper CSS file */
+			.noheader header { opacity: 0;}
+
 		</style>
 	</head>
 
@@ -130,24 +133,82 @@
 					<h2>Assignments</h2>
 				</section>
 
-				<section>
+				<section data-state="assignmentfooter">
 					<h2>Project #1: Sol Lewitt Animated Wall Drawing</h2>
 					Create an animated composition following the rules presented. The rules must be followed explicitely, but any room for interpretation is encouraged to be played with
+					<style>
+						.assignmentfooter footer #leftside:after{content: "Assignments";color:#fff;text-shadow:none;}
+					</style>
 				</section>
 
-				<section>
+				<section data-state="assignmentfooter">
 					<h2>Project #2: 16 Bars</h2>
 					Use 8, 16, or 20 lyrical measures of a song (ie: a verse) to create a short video using kinetic typography animated in sync with the music. Use After Effects and the various text, shape and effects tools to implement the appropriate styles and animations to match the style of music and content of the lyrics.
 				</section>
 
-				<section>
+				<section data-state="assignmentfooter">
 					<h2>Project #3: Generative Composition</h2>
 					Using Processing create a generative animated composition. Your software should make use of variables, loops, objects, and random/noise functions.
 				</section>
 
-				<section>
+				<section data-state="assignmentfooter">
 					<h2>Project #4: Interactive Graphics</h2>
 					Use mouse/touch interaction to affect on screen graphics through responsive animation. The software should be able to export as Javascript and run in the web browser.
+				</section>
+
+				<section>
+					<h2>Origins of Motion Graphics</h2>
+				</section>
+
+				<section data-background-video="video/wizardofoz.mp4" data-transition="fade" data-state="wizardofozfooter noheader">
+					<style>
+						.wizardofozfooter footer #leftside:after{content: "The Wizard of Oz (1939)";color:#fff;}
+					</style>
+				</section>
+
+				<section data-background-video="video/itsawonderfullife.mp4" data-transition="fade" data-state="wonderfullifefooter noheader">
+					<style>
+						.wonderfullifefooter footer #leftside:after{content: "It's a Wonderful Life (1946)";color:#fff;}
+					</style>
+				</section>
+
+				<section data-background="images/saulbass.jpg" data-transition="fade" data-state="saulbassfooter">
+					<style>
+						.saulbassfooter footer #leftside:after{content: "Saul Bass";color:#fff;}
+					</style>
+				</section>
+
+				<section data-background="images/saulbasslogos.jpg" data-transition="fade" data-state="saulbassfooter">
+				</section>
+
+				<section data-background-video="video/goldenarm.mp4" data-transition="fade" data-state="goldenarmfooter noheader">
+					<style>
+						.goldenarmfooter footer #leftside:after{content: "The Man With The Golden Arm (1955)";color:#fff;}
+					</style>
+				</section>
+
+				<section data-background-video="video/vertigo.mp4" data-transition="fade" data-state="vertigofooter noheader">
+					<style>
+						.vertigofooter footer #leftside:after{content: "Vertigo (1958)";color:#fff;}
+					</style>
+				</section>
+
+				<section data-background-video="video/anatomyofamurder.mp4" data-transition="fade" data-state="anatomyofamurderfooter noheader">
+					<style>
+						.anatomyofamurderfooter footer #leftside:after{content: "Anatomy of a Murder (1959)";color:#fff;}
+					</style>
+				</section>
+
+				<section data-background-video="video/northbynorthwest.mp4" data-transition="fade" data-state="northbynorthwestfooter noheader">
+					<style>
+						.northbynorthwestfooter footer #leftside:after{content: "North by Northwest (1959)";color:#fff;}
+					</style>
+				</section>
+
+				<section data-background-video="video/psycho.mp4" data-transition="fade" data-state="psychofooter noheader">
+					<style>
+						.psychofooter footer #leftside:after{content: "Psycho (1960)";color:#fff;}
+					</style>
 				</section>
 
 			</div>
