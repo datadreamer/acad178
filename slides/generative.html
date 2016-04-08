@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Generative Graphics - ACAD 178: Motion Graphics</title>
+
+		<meta name="description" content="Lecture slides for USC ACAD 178 Motion Graphics course.">
+		<meta name="author" content="Aaron Siegel">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/mediaqueries.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			section img{
+				width: 90% !important;
+				height: auto;
+			}
+
+			/* Move all this shit into the proper CSS file */
+			.noheader header { opacity: 0;}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<!-- header and footer stays on page and changes when tweaked by <style> inside each <section> -->
+				<header>
+					<a href="http://www.datadreamer.com/usc/acad178/" class="left">ACAD 178: Motion Graphics</a>
+					<a href="http://iovine-young.usc.edu/" class="right">USC Jimmy Iovine and Andre Young Academy</a>
+				</header>
+
+				<footer>
+					<span id="leftside" class="left"></span>
+					<span id="rightside" class="right"></span>
+				</footer>
+
+				<section>
+					<div class="titletext">
+						<div class="week">WEEK 6:</div>
+						<h1>Generative Graphics</h1>
+						Aaron Siegel |
+						<script type="text/javascript">
+				        	document.write("<n uers=\"znvygb:nnebafvr@hfp.rqh\" ery=\"absbyybj\">nnebafvr@hfp.rqh</n>".replace(/[a-zA-Z]/g,
+				        	function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+				        </script>
+				        | Spring 2016
+					</div>
+				</section>
+
+				<section data-state="history">
+					<h2>History of Generative Art</h2>
+					<style>
+						.history footer #leftside:after{content: "History of Generative Art";color:#fff;text-shadow:none;}
+					</style>
+				</section>
+
+				<section>
+					3 Standard Stoppages (1913-14)<br/>
+					Marcel Duchamp
+				</section>
+
+				<section>
+					<a href="https://archive.org/details/systemicpainting00allo">Systemic Painting (1966)</a>
+				</section>
+
+				<section>
+					Wall Drawings (1960's-2010)<br/>
+					Sol LeWitt
+				</section>
+
+				<section>
+					<h2>Contemporary Generative Artists &amp; Designers</h2>
+				</section>
+
+				<section data-state="contemporaryartists">
+					<div class="third">Joshua Davis</div>
+					<div class="third">Casey Reas</div>
+					<div class="third">Yugo Nakamura</div>
+					<div class="third">Robert Hodgin</div>
+					<div class="third">Marius Watz</div>
+					<div class="third">Golan Levin</div>
+					<div class="third">Jared Tarbell</div>
+					<div class="third">Matt Pearson</div>
+					<div class="third">Josh Nimoy</div>
+					<style>
+						.contemporaryartists footer #leftside:after{content: "Contemporary Generative Artists & Designers";color:#fff;text-shadow:none;}
+					</style>
+				</section>
+
+				<section>
+					<h2><a href="http://www.joshuadavis.com/">Joshua Davis</a></h2>
+				</section>
+
+				<section>
+					<h2><a href="http://reas.com/">Casey Reas</a></h2>
+				</section>
+
+				<section>
+					<h2><a href="http://tha.jp/">Yugo Nakamura</a></h2>
+				</section>
+
+				<section>
+					<h2><a href="http://roberthodgin.com/">Robert Hodgin</a></h2>
+				</section>
+
+				<section>
+					<h2><a href="http://mariuswatz.com/">Marius Watz</a></h2>
+				</section>
+
+				<section>
+					<h2><a href="http://www.flong.com/">Golan Levin</a></h2>
+				</section>
+
+				<section>
+					<h2><a href="http://levitated.net/gravityIndex.html">Jared Tarbell</a></h2>
+				</section>
+
+				<section>
+					<h2><a href="http://zenbullets.com/images.php">Matt Pearson</a></h2>
+				</section>
+
+				<section>
+					<h2><a href="http://jtnimoy.com/">Josh Nimoy</a></h2>
+				</section>
+
+				<section>
+					<h1>Let's get coding!</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				width: 1920,
+		    height: 1080,
+		    margin: 0.1,
+		    minScale: 0.2,
+		    maxScale: 2.0,
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
