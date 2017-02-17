@@ -11,13 +11,18 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="_js/menu.js"></script>
+		<style>
+			video{
+				width: 100%;
+				height: auto;
+			}
+		</style>
 	</head>
 
 	<body>
 
-		<section>
 
-			<ol>
+			<ol id="linklist" style="display:none;">
 				<li><a href="http://i.imgur.com/blIBReI.mp4">catnip kicking in</a></li>
 				<li><a href="http://i.imgur.com/AZxN07h.mp4">sharing the space</a></li>
 				<li><a href="http://i.imgur.com/GfHKd5b.mp4">bunny buddies</a></li>
@@ -54,7 +59,23 @@
 
 			</ol>
 
-		</section>
+			<div id="videocontainer">
+			</div>
+
+		<script>
+			var list = document.getElementById("linklist").children;
+			var index = Math.round(Math.random() * list.length);
+			var randomurl = list[index].firstChild.getAttribute("href");
+			//console.log(randomurl);
+			var node = document.getElementById("videocontainer");
+			var video = document.createElement("video");
+			video.src = randomurl;
+			video.autoplay = true;
+			video.loop = true;
+			video.load();
+			node.appendChild(video);
+
+		</script>
 
 	</body>
 </html>
