@@ -69,7 +69,14 @@
 			//console.log(randomurl);
 			var node = document.getElementById("videocontainer");
 			var video = document.createElement("video");
-			video.src = randomurl;
+			var source = document.createElement("source");
+			source.src = randomurl;
+			if(randomurl.endsWith("mp4")){
+				source.type = "video/mp4"
+			} else if(randomurl.endsWith("webm")){
+				source.type = "video/webm"
+			}
+			video.appendChild(source);
 			video.autoplay = true;
 			video.loop = true;
 			video.load();
