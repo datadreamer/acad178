@@ -12,10 +12,21 @@
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="_js/menu.js"></script>
 		<style>
-			video{
-				width: 100%;
-				height: auto;
-			}
+            body{
+                overflow: hidden;
+            }
+            @media screen and (orientation: landscape){
+                video{
+                    width: auto;
+                    height: 100vh;
+                }
+            }
+            @media screen and (orientation: portrait){
+                video{
+                    width: 100%;
+                    height: auto;
+                }
+            }
 		</style>
 	</head>
 
@@ -107,6 +118,7 @@
 				<li><a href="http://i.imgur.com/3amwmgp.mp4">many kittens in a box</a></li>
 				<li><a href="http://i.imgur.com/aBuXn3A.mp4">sleepy kitty does a stretch</a></li>
 				<li><a href="http://i.imgur.com/QRzRpa9.mp4">husky pup loves tummy rubs</a></li>
+                <li><a href="http://i.imgur.com/K5bYJ7W.mp4">corgi attacks snowball</a></li>
 			</ol>
 
 			<div id="videocontainer">
